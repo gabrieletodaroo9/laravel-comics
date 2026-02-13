@@ -2,8 +2,8 @@
 
 return [
 [
-"name" => "CHARACTER",
-"path" => "/character"
+"name" => "CHARACTERS",
+"path" => "/characters"
 ],
 [
 "name" => "COMICS",

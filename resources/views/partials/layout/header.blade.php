@@ -1,6 +1,6 @@
 
 <header>
-    <nav class="container-fluid d-flex justify-content-center justify-content-lg-between align-items-center px-lg-5">
+    <nav class="container d-flex justify-content-center justify-content-lg-between align-items-center px-lg-5">
         <a href="#" class="logo">
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo-dc" class="w-50">
         </a>
