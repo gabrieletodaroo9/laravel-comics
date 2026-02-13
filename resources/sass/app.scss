@@ -1,6 +1,8 @@
 // Fonts
 @import url('https://fonts.bunny.net/css?family=Nunito');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 // Variables
 @import 'variables';
 
@@ -32,6 +34,29 @@ a:hover {
 }
 
 /*#endregion GENERICS */
+
+/*#region UTILS */
+
+.side-content {
+    background-color: #0282f9;
+}
+
+.main-icon {
+    width: 50px;
+}
+
+.scale:hover a {
+    scale: 1.12;
+    // padding-left: 1.3rem;
+    // font-size: 1.01rem;
+}
+
+.scale:hover .main-icon {
+    transition: 0.6s all ease;
+    transform: rotate(18deg) !important
+}
+
+/*#endregion UTILS */
 
 /*#region HEADER */
 
@@ -141,3 +166,197 @@ section {
 }
 
 /* #endregion SECTION CARD  */
+
+
+/*#region FOOTER */
+
+footer {
+    overflow-x: hidden;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    .big-logo {
+        width: 550px;
+        top: -15%;
+        left: 50%;
+        z-index: 0;
+    }
+
+
+    h3 {
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+    }
+}
+
+.footer-social {
+    position: relative;
+    z-index: 1;
+    background-color: #303030;
+    width: 100%;
+    padding: 3rem 0;
+
+    .btn {
+        border-radius: 0;
+        color: white;
+        border: 2px solid #0282f9;
+
+        &:hover {
+            background-color: #55a3ec;
+            scale: 1.05;
+            font-size: 1.05rem;
+        }
+    }
+
+    .follow-span {
+        color: #0282f9;
+        font-weight: bold;
+        padding-right: 2rem;
+        font-size: 1.3rem;
+
+        &:hover {
+            color: #55a3ec;
+            font-size: 1.33rem;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+        transition: all 0.3 ease;
+    }
+
+    img:hover {
+        background-color: rgba(2, 130, 249, 0.5);
+        box-shadow: 0 0 7px rgba(2, 130, 249, 0.8) !important;
+        scale: 1.07;
+    }
+}
+
+/* #endregion FOOTER */
+
+
+/*#region MEDIA QUERY */
+
+@media screen and (max-width:992px) {
+
+    nav>.list-unstyled {
+        gap: 0rem !important;
+    }
+
+    .main-icon {
+        padding: 0.8rem !important;
+        margin: 0.8rem;
+    }
+
+    @media screen and (max-width:850px) {
+        .big-logo {
+            left: 50% !important;
+            transform: translate(-50%, 0)
+        }
+
+        footer .row {
+            padding-left: 4rem;
+        }
+
+        .jumbotron {
+            margin-top: 2rem;
+        }
+
+        .logo {
+            text-align: center;
+
+        }
+
+        header {
+            position: relative;
+        }
+
+        nav img {
+            width: 80px !important;
+            margin: 1rem !important;
+        }
+
+        nav>.list-unstyled {
+            position: absolute;
+            top: 6.5rem;
+            width: 100%;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            gap: 0.2rem !important;
+
+        }
+
+        header li {
+            padding: 0.5rem;
+        }
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    nav>.list-unstyled {
+        width: 100vw !important;
+        gap: 0 !important;
+        text-align: center;
+    }
+
+    .link-header{
+        font-size: 0.8rem;
+    }
+
+    nav>.list-unstyled>li {
+        width: 20%;
+    }
+
+    .big-logo {
+        top: -3rem !important;
+    }
+}
+
+
+
+@media screen and (max-width:586px) {
+
+    .title-card-container {
+        left: 50%;
+        transform: translate(-50%, 0)
+    }
+
+
+
+    .follow-span {
+        padding-right: 0 !important;
+    }
+
+    footer .row {
+        padding-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width:473px) {
+    nav>.list-unstyled {
+        font-size: 0.8rem;
+    }
+
+    footer .row {
+        padding-left: 0;
+    }
+
+    .big-logo {
+        top: 1rem !important;
+    }
+    .link-header{
+        font-size: 0.5rem;
+    }
+}
+
+/* #endregion MEDIA QUERY */

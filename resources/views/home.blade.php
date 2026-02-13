@@ -2,8 +2,8 @@
 
 @section("content")
 
-@include("partials.jumbotron")
-@include("partials.cardSection")
-
+@include("partials.generics.jumbotron")
+@include("partials.generics.cardSection")
+@include("partials.generics.sideContent")
 
 @endsection

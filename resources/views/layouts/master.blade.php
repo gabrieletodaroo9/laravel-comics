@@ -8,7 +8,7 @@
 </head>
 <body>
 
-@include("partials.header")
+@include("partials.layout.header")
 
 <main>
 
@@ -16,7 +16,7 @@
 
 </main>
 
-@include("partials.footer")
+@include("partials.layout.footer")
     
 </body>
 </html>

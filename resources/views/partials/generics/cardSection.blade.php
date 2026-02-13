@@ -4,9 +4,10 @@
             @foreach(config("comics") as $comic)
 
             <x-home-card :comic="$comic" />
+            
             @endforeach
             <div class="title-card-container">CURRENT SERIES</div>
-            <button class="btn btn-primary text-center m-auto mt-4">LOAD MORE</button>
+            <a href="" class="btn btn-primary text-center m-auto mt-4">SHOW MORE</a>
 
         </div>
     </div>
