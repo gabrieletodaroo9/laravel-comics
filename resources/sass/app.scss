@@ -6,3 +6,68 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+/*#region RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion RESET */
+
+/*#region GENERICS */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: #0282f9 !important;
+    color: #0282f9;
+}
+
+/*#endregion GENERICS */
+
+/*#region HEADER */
+
+header {
+
+    nav ul {
+        margin: 0;
+    }
+
+    li {
+        padding: 3rem 0;
+
+        &:hover {
+            border-bottom: 4px solid #0282f9;
+        }
+    }
+
+    li a {
+        font-weight: 600;
+        color: rgb(66, 69, 70);
+        text-decoration: none;
+    }
+
+    .active {
+        border-bottom: 4px solid #0282f9;
+
+        a {
+            color: #0282f9;
+        }
+    }
+
+    .logo:hover {
+        scale: 1.05;
+        cursor: pointer;
+    }
+
+}
+
+/* #endregion */
