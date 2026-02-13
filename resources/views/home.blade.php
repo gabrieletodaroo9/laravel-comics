@@ -2,6 +2,8 @@
 
 @section("content")
 
-<h1>homepage</h1>
+@include("partials.jumbotron")
+@include("partials.cardSection")
+
 
 @endsection
